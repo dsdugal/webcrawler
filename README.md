@@ -66,6 +66,7 @@ content = crawler.get(target)
 - [x] Traverse static content web pages
 - [ ] Traverse dynamic content web pages
 - [x] Authentication via Basic Auth
+- [ ] Authentication via Digest Auth
 - [ ] Authentication via NTLM
 - [ ] Authentication via OAuth
 - [ ] Thorough set of unit tests
