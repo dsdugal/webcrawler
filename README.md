@@ -14,10 +14,10 @@ Additionally, the crawler implements delays in order to facilitate the highest c
 
 #### Stack
 ------------
-- IMAGE Linux/MacOS
-- IMAGE [Ruby](https://www.ruby-lang.org/en/)
-- IMAGE [Bundler](https://bundler.io/)
-- IMAGE [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver)
+- Linux/MacOS
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Bundler](https://bundler.io/)
+- [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver)
 
 #### Installation
 ------------
