@@ -5,7 +5,7 @@ Properly configured web servers respond to HTTP requests with headers that conta
 
 - [CSV](https://github.com/ruby/csv) is used to parse CSV data
 - [JSON](https://github.com/flori/json) is used to parse JSON data
-- [Nokogiri](https://github.com/sparklemotion/nokogiri) is used to parse CSS, HTML, and XML data
+- [Nokogiri](https://github.com/sparklemotion/nokogiri) is used to parse HTML and XML data
 - Plaintext is returned without parsing (ie. as a string)
 
 Additionally, the crawler implements delays in order to facilitate the highest chance of successful requests and handles resolvable HTTP responses (ex. redirections, rate limits, etc) to ensure that the data is returned if the page is available.
