@@ -31,7 +31,6 @@ module WebCrawler
 
       # Gems used to parse different content types.
       @parsers = OpenStruct.new({
-        "css" => Nokogiri::CSS,
         "csv" => CSV,
         "html" => Nokogiri::HTML,
         "json" => JSON,
@@ -54,8 +53,8 @@ module WebCrawler
     def get(url, auth: false, delay: true)
       begin
         response = get_static(url, auth, delay)
-      rescue WebCrawler::Error => Error
-        raise Error
+      rescue WebCrawler::Error => error
+        raise error
       end
 
       parse(response)
@@ -121,7 +120,7 @@ module WebCrawler
 
         connection.request(request)
       end
-    rescue SocketError, SystemCallError => Error
+    rescue SocketError, SystemCallError => error
       raise WebCrawler::ConnectionError.new
     end
 
